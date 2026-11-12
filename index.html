@@ -3,101 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="孙祥 Xiang Sun｜项目管理硕士（悉尼大学）· 土木工程本科｜实习与项目作品集">
-<title>孙祥 Xiang Sun｜项目作品集</title>
+<meta name="description" content="孙祥的项目管理与 PMO 作品集，展示进度成本分析、敏捷交付、风险评价及建设单位实习经历。国内为主，同时考虑澳洲机会。">
+<title>孙祥｜项目管理 / PMO 作品集</title>
 
 <style>
-/* Layout: one reading column, a left "baseline" rail of dates like a schedule; bilingual toggle */
-:root{
-  --bg:#f6f7f8; --surface:#ffffff; --fg:#17202a; --muted:#5b6672; --line:#dde2e7;
-  --accent:#0d6b6b; --accent-soft:#e3f1f0; --bar:#c9d3dc;
-  --display:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
-  --body:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
-  --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
-}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0f1418; --surface:#161d22; --fg:#e6ebef; --muted:#9aa6b1; --line:#26313a;
-  --accent:#4fbdb6; --accent-soft:#16312f; --bar:#2c3944; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0f1418; --surface:#161d22; --fg:#e6ebef; --muted:#9aa6b1; --line:#26313a;
-  --accent:#4fbdb6; --accent-soft:#16312f; --bar:#2c3944; color-scheme:dark}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6}
-.wrap{max-width:860px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:flex-start;border-bottom:1px solid var(--line);padding-bottom:24px}
-h1{font-family:var(--display);font-size:clamp(28px,5vw,40px);line-height:1.1;margin:0;letter-spacing:-.01em;text-wrap:balance}
-h1 small{display:block;font-size:.5em;color:var(--muted);font-weight:500;margin-top:6px;letter-spacing:0}
-.tag{margin:12px 0 0;color:var(--fg);max-width:60ch}
-.avail{display:inline-flex;gap:8px;align-items:center;margin-top:14px;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:13px;padding:6px 12px;border-radius:999px}
-.avail::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
-.langs{display:flex;gap:4px;border:1px solid var(--line);border-radius:8px;padding:3px;background:var(--surface)}
-.langs button{font:inherit;font-size:13px;border:0;background:none;color:var(--muted);padding:6px 12px;border-radius:6px;cursor:pointer}
-.langs button[aria-pressed="true"]{background:var(--accent);color:#fff}
-.langs button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-section{margin-top:40px}
-h2{font-family:var(--display);font-size:13px;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 16px}
-.row{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--line)}
-.row:first-of-type{border-top:0}
-.when{font-family:var(--mono);font-size:12.5px;color:var(--muted);padding-top:3px;font-variant-numeric:tabular-nums}
-.what{min-width:0}
-h3{font-family:var(--display);font-size:18px;margin:0;line-height:1.3;text-wrap:balance}
-.org{color:var(--muted);font-size:14px;margin:2px 0 8px}
-ol{margin:0;padding-left:22px;list-style:decimal}
-li{margin:4px 0;max-width:68ch}
-li b{font-weight:600}
-.metric{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.metric span{font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:6px;padding:3px 8px;color:var(--fg);background:var(--surface)}
-.budget{margin-top:12px;max-width:420px}
-.budget .track{height:10px;background:var(--bar);border-radius:3px;position:relative;overflow:hidden}
-.budget .fill{position:absolute;inset:0 auto 0 0;width:95.6%;background:var(--accent)}
-.budget .cap{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:4px}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-.skills div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;min-width:0}
-.skills h4{margin:0 0 6px;font-size:13px;color:var(--muted);font-weight:600}
-.contact{display:flex;flex-wrap:wrap;gap:12px 28px;font-size:14px}
-.contact span{color:var(--muted)}
-.contact code{font-family:var(--mono);font-size:13.5px;color:var(--fg);user-select:all}
-a{color:var(--accent)}
-[lang-block]{display:none}
-html[data-lang="zh"] [lang-block="zh"],html[data-lang="en"] [lang-block="en"]{display:block}
-html[data-lang="zh"] span[lang-block="zh"],html[data-lang="en"] span[lang-block="en"]{display:inline}
-.lead{color:var(--muted);margin:-8px 0 16px;font-size:14px}
-.projs{display:grid;gap:16px}
-.proj{display:block;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px;color:inherit;text-decoration:none}
-a.proj:hover{border-color:var(--accent)}
-a.proj:hover .go{text-decoration:underline}
-.proj.soon{border-left-color:var(--bar)}
-.pmeta{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:12px;color:var(--muted)}
-.pmeta .score{color:var(--accent);font-weight:700}
-.proj h3{font-size:19px;margin:8px 0 8px}
-.proj p{margin:0 0 10px;max-width:70ch}
-.pskill{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;margin-top:6px;font-size:13.5px}
-.pskill b{font-size:12px;color:var(--muted);font-weight:600;min-width:3em}
-.pskill>span:not([lang-block]),.pskill>span[lang-block]{border:1px solid var(--line);border-radius:6px;padding:1px 8px;background:var(--bg)}
-html[data-lang="zh"] .pskill>[lang-block="en"],html[data-lang="en"] .pskill>[lang-block="zh"]{display:none}
-.go{display:inline-block;margin-top:14px;font-weight:600;color:var(--accent);font-size:14.5px}
-.go.muted{color:var(--muted);font-weight:500;font-size:13px}
-footer{margin-top:48px;color:var(--muted);font-size:12.5px}
-@media (max-width:560px){.row{grid-template-columns:1fr;gap:4px}}
-</style>
-<style>body{margin:0}*{box-sizing:border-box}img{max-width:100%}</style>
-</head>
-<body>
-
-<div class="wrap">
-<header>
-  <div>
-    <h1>孙祥 Xiang (Sonny) Sun<small><span lang-block="zh">悉尼大学 项目管理硕士 · 土木工程本科</span><span lang-block="en">Master of Project Management, University of Sydney · BEng Civil Engineering</span></small></h1>
-    <p class="tag" lang-block="zh">做过建设单位侧的招标采购、合同审核与结算审计；会用 MS Project 搭进度与成本基线，用 Jira 跑 Scrum。</p>
-    <p class="tag" lang-block="en">Owner-side experience in tendering, contract review and final-account audit. I build schedule and cost baselines in Microsoft Project and run Scrum in Jira.</p>
-    <div class="avail"><span lang-block="zh">寒假可全职实习：2026 年 11 月底 – 2027 年 2 月（约 3 个月）</span><span lang-block="en">Available full-time: late Nov 2026 – Feb 2027 (about 3 months)</span></div>
+:root{--bg:#f6f7f8;--surface:#fff;--fg:#17202a;--muted:#5b6672;--line:#dde2e7;--accent:#0d6b6b;--accent-soft:#e3f1f0;--body:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1418;--surface:#161d22;--fg:#e6ebef;--muted:#a6b2bc;--line:#2b3740;--accent:#79c9c3;--accent-soft:#193230;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 var(--body)}a{color:var(--accent)}img{max-width:100%;height:auto}button,a{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.wrap{max-width:1120px;margin:auto;padding:32px max(24px,env(safe-area-inset-right)) 56px max(24px,env(safe-area-inset-left))}header{padding-bottom:32px;border-bottom:1px solid var(--line)}.topline{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:26px}.name{font-size:22px;font-weight:650;margin:0}.langs{display:flex;gap:4px;padding:3px;border:1px solid var(--line);border-radius:8px;background:var(--surface)}.langs button{font:inherit;font-size:13px;border:0;background:none;color:var(--muted);padding:5px 12px;border-radius:5px;cursor:pointer}.langs button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
+h1{font-size:clamp(29px,4.2vw,46px);line-height:1.2;letter-spacing:-.025em;margin:0 0 12px;text-wrap:balance}.education-line{color:var(--muted);margin:0;font-size:15px}.intro{max-width:780px;font-size:16px;line-height:1.85;margin:18px 0}.availability p{margin:0}.availability{font-size:14px}.locations{color:var(--muted)}.avail{color:var(--accent);font-weight:600;padding-top:7px}.hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;margin-top:22px}.hero-actions a{text-decoration:none;font-weight:600;font-size:14px}.hero-actions a:hover{text-decoration:underline}.primary{background:var(--accent);color:var(--bg);border-radius:7px;padding:9px 16px}
+section{margin-top:44px}h2{font-size:22px;line-height:1.35;margin:0 0 20px;letter-spacing:-.02em}h3{font-size:18px;line-height:1.4;margin:0}.section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:20px}.section-heading h2{margin:0}.section-heading p{font-size:13px;color:var(--muted);margin:0}.featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.featured-card{color:inherit;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s}.featured-card:hover{border-color:var(--accent)}.feature-image{height:170px;padding:12px;background:#e8ecef;border-bottom:1px solid var(--line)}.feature-image img{width:100%;height:100%;object-fit:contain;display:block}.feature-body{padding:20px;display:flex;flex-direction:column;flex:1}.feature-body p{margin:0}.capability{font-size:13px;color:var(--accent);font-weight:650;margin-bottom:8px!important}.featured-card h3{font-size:23px;margin-bottom:5px}.context{font-size:12px;color:var(--muted);margin-bottom:13px!important}.feature-description{font-size:14px;line-height:1.8;flex:1}.feature-fact{font-size:12px;border-top:1px solid var(--line);margin-top:18px!important;padding-top:12px;color:var(--muted)}.go{display:block;color:var(--accent);font-size:14px;font-weight:600;margin-top:13px}.featured-card:hover .go,.proj:hover .go{text-decoration:underline}
+.row{display:grid;grid-template-columns:160px minmax(0,1fr);gap:24px;border-top:1px solid var(--line);padding:22px 0}.when{font:12px/1.8 var(--mono);color:var(--muted);padding-top:3px}.org{color:var(--muted);font-size:14px;margin:4px 0 12px}ol{margin:0;padding-left:21px}li{margin:7px 0;max-width:78ch}li b{font-weight:600}.projs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.proj{display:block;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px;color:inherit;text-decoration:none}.proj:hover{border-color:var(--accent)}.pmeta{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px;color:var(--muted)}.score{color:var(--accent);font-weight:600}.proj h3{margin:10px 0}.proj p{font-size:14px;margin:0;color:var(--muted)}.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.skills>div{border:1px solid var(--line);border-radius:10px;padding:16px 20px;background:var(--surface)}.skills h4{font-size:13px;color:var(--muted);margin:0 0 7px}.skills a{text-decoration:underline;text-underline-offset:3px}.contact{display:flex;flex-wrap:wrap;gap:12px 28px;overflow-wrap:anywhere}.contact span,.additional{color:var(--muted);font-size:13px}.additional{margin-top:18px}footer{border-top:1px solid var(--line);padding-top:20px;margin-top:40px;font-size:12px;color:var(--muted)}
+[lang-block]{display:none}html[data-lang="zh"] [lang-block="zh"],html[data-lang="en"] [lang-block="en"]{display:block}html[data-lang="zh"] span[lang-block="zh"],html[data-lang="en"] span[lang-block="en"]{display:inline}
+@media(max-width:800px){.featured-grid{grid-template-columns:1fr}.featured-card{display:grid;grid-template-columns:180px minmax(0,1fr)}.feature-image{height:100%;min-height:210px;border-bottom:0;border-right:1px solid var(--line);padding:10px}.feature-body{padding:18px}.featured-card h3{font-size:21px}.feature-fact{margin-top:12px!important}.projs{grid-template-columns:1fr}}
+@media(max-width:560px){.wrap{padding:22px 18px 40px}.topline{margin-bottom:22px}.intro{font-size:15px}.section-heading{align-items:flex-start;flex-direction:column;gap:5px}.featured-card{display:flex}.feature-image{height:168px;min-height:0;border:0;border-bottom:1px solid var(--line)}.row{grid-template-columns:1fr;gap:5px}.skills{grid-template-columns:1fr}.hero-actions{gap:12px 20px}section{margin-top:36px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.featured-card{transition:none}}
+</style></head><body><main class="wrap"><header>
+  <div class="topline"><p class="name"><span lang-block="zh">孙祥</span><span lang-block="en">Xiang Sun</span></p>
+    <div class="langs" role="group" aria-label="Language">
+      <button id="btn-zh" data-l="zh" aria-pressed="true">中文</button>
+      <button id="btn-en" data-l="en" aria-pressed="false">EN</button>
+    </div>
   </div>
-  <div class="langs" role="group" aria-label="Language">
-    <button id="btn-zh" data-l="zh" aria-pressed="true">中文</button>
-    <button id="btn-en" data-l="en" aria-pressed="false">EN</button>
+  <h1><span lang-block="zh">项目管理 / PMO 作品集</span><span lang-block="en">Project Management / PMO Portfolio</span></h1>
+  <p class="education-line"><span lang-block="zh">悉尼大学项目管理硕士在读 · 土木工程本科</span><span lang-block="en">Master of Project Management student, University of Sydney · BEng Civil Engineering</span></p>
+  <p class="intro" lang-block="zh">我关注项目如何从计划走到交付。在课程项目中，用 MS Project 跟踪进度与成本，用 Jira 拆解需求、记录测试与验收；在建设单位实习中，参与招标文件编制、合同资料核对和工作事项跟进。</p>
+  <p class="intro" lang-block="en">I focus on moving projects from planning to delivery. My coursework uses Microsoft Project for schedule and cost tracking, and Jira for requirements, testing and acceptance. My owner-side internships involved tender documents, contract records and task follow-up.</p>
+  <div class="availability"><p><span lang-block="zh">求职意向 · 项目管理 / PMO 实习</span><span lang-block="en">Seeking project management / PMO internships</span></p><p class="locations"><span lang-block="zh">国内为主 · 同时考虑澳洲机会</span><span lang-block="en">Primarily China · also open to opportunities in Australia</span></p>
+    <p class="avail"><span lang-block="zh">寒假可全职实习 · 2026 年 11 月底 – 2027 年 2 月</span><span lang-block="en">Available full-time · late Nov 2026 – Feb 2027</span></p>
   </div>
-</header>
-
-<section>
+  <nav class="hero-actions" aria-label="Portfolio navigation"><a class="primary" href="#selected-work"><span lang-block="zh">查看代表作品</span><span lang-block="en">Explore selected work</span></a><a href="#experience"><span lang-block="zh">实习经历</span><span lang-block="en">Experience</span></a><a href="#contact"><span lang-block="zh">联系我</span><span lang-block="en">Contact</span></a></nav>
+</header><section id="selected-work">
+  <div class="section-heading"><h2><span lang-block="zh">代表作品</span><span lang-block="en">Selected work</span></h2><p><span lang-block="zh">计划、交付与风险判断</span><span lang-block="en">Planning, delivery and risk judgement</span></p></div>
+  <div class="featured-grid"><a class="featured-card" href="work/nexusone.html">
+      <div class="feature-image"><img src="work/img/nexus-dashboard-1.jpg" alt="NexusOne" width="420" height="210"></div>
+      <div class="feature-body">
+        <p class="capability"><span lang-block="zh">项目计划与状态汇报</span><span lang-block="en">Planning & status reporting</span></p>
+        <h3>NexusOne</h3>
+        <p class="context"><span lang-block="zh">银行核心系统迁移 · 课程模拟</span><span lang-block="en">Core-banking migration · course simulation</span></p>
+        <p class="feature-description"><span lang-block="zh">个人完成挣值分析和两页状态仪表盘，识别进度、成本和跨项目依赖问题，提出需要指导委员会决策的事项。</span><span lang-block="en">Independently produced earned-value analysis and a two-page dashboard covering schedule, cost, dependencies and decisions for the steering committee.</span></p>
+        <p class="feature-fact"><span lang-block="zh">159 项任务基线 · 7 个里程碑</span><span lang-block="en">159-task baseline · 7 milestones</span></p>
+        <span class="go"><span lang-block="zh">查看仪表盘与分析 →</span><span lang-block="en">View dashboard & analysis →</span></span>
+      </div>
+    </a><a class="featured-card" href="work/pawconnect.html">
+      <div class="feature-image"><img src="work/img/paw-list.jpg" alt="PawConnect" width="420" height="210"></div>
+      <div class="feature-body">
+        <p class="capability"><span lang-block="zh">需求拆解与迭代交付</span><span lang-block="en">Requirements & iterative delivery</span></p>
+        <h3>PawConnect</h3>
+        <p class="context"><span lang-block="zh">领养平台原型 · 团队课程项目</span><span lang-block="en">Adoption prototype · team coursework</span></p>
+        <p class="feature-description"><span lang-block="zh">负责宠物浏览与筛选，编写带验收标准的用户故事，交付 3 个故事、9 个故事点；参与跨模块测试与缺陷复测。</span><span lang-block="en">Owned pet browsing and filters, wrote acceptance criteria and delivered 3 stories worth 9 points. Tested cross-feature flows and retested defects.</span></p>
+        <p class="feature-fact"><span lang-block="zh">个人交付 3 个故事 · 9 个故事点</span><span lang-block="en">My delivery · 3 stories · 9 points</span></p>
+        <span class="go"><span lang-block="zh">查看交付与测试记录 →</span><span lang-block="en">View delivery & testing →</span></span>
+      </div>
+    </a><a class="featured-card" href="work/ryde-risk-evaluation.html">
+      <div class="feature-image"><img src="work/img/ryde-risk-matrix.png" alt="Ryde Hospital" width="420" height="210"></div>
+      <div class="feature-body">
+        <p class="capability"><span lang-block="zh">风险判断与优先级</span><span lang-block="en">Risk evaluation & priorities</span></p>
+        <h3>Ryde Hospital</h3>
+        <p class="context"><span lang-block="zh">医院改扩建 · 团队案例分析</span><span lang-block="en">Hospital redevelopment · team case analysis</span></p>
+        <p class="feature-description"><span lang-block="zh">负责风险评价章节，为 5 项风险制定分级与排序依据，解释同为 16 分的风险为什么需要不同的管理优先级。</span><span lang-block="en">Wrote the risk evaluation, applied criteria to 5 risks and explained why two risks scoring 16 require different management priorities.</span></p>
+        <p class="feature-fact"><span lang-block="zh">5 项风险 · 分级准则与管理建议</span><span lang-block="en">5 risks · criteria & recommendations</span></p>
+        <span class="go"><span lang-block="zh">查看风险评价 →</span><span lang-block="en">View risk evaluation →</span></span>
+      </div>
+    </a></div>
+</section><section id="experience">
   <h2><span lang-block="zh">实习经历</span><span lang-block="en">Experience</span></h2>
   <div class="row">
     <div class="when">2024.09 – 2024.11</div>
@@ -121,113 +90,59 @@ footer{margin-top:48px;color:var(--muted);font-size:12.5px}
   <div class="row">
     <div class="when">2024.07 – 2024.08</div>
     <div class="what">
-      <h3><span lang-block="zh">实习生</span><span lang-block="en">Intern</span></h3>
+      <h3><span lang-block="zh">实习生（兼职）</span><span lang-block="en">Part-time Intern</span></h3>
       <p class="org"><span lang-block="zh">中能建（无锡）投资发展有限公司</span><span lang-block="en">CEEC Wuxi Investment Development Co., Ltd.</span></p>
-      <ol lang-block="zh"><li>协助工程计量结算、造价管理、建设投资确认、合同履约评价及招标采购；实习评价"工作质量优秀"，无缺勤</li></ol>
-      <ol lang-block="en"><li>Supported quantity measurement, final accounts, cost management, investment confirmation, contractor evaluation and tendering; rated "excellent" with full attendance</li></ol>
+      <ol lang-block="zh">
+        <li><b>文件核对</b> · 核对招投标文件的文字、标点与前后版本差异，协助合同文件下发。</li>
+        <li><b>会议支持</b> · 整理会议纪要，记录讨论内容和工作安排。</li>
+        <li><b>事务跟进</b> · 维护日常管理表格，记录待办事项、经办人员及签字流转情况。</li>
+      </ol>
+      <ol lang-block="en">
+        <li><b>Document checks</b> · Checked tender wording, punctuation and differences between versions, and supported contract-document distribution.</li>
+        <li><b>Meeting support</b> · Prepared meeting minutes documenting discussions and work arrangements.</li>
+        <li><b>Administrative tracking</b> · Maintained daily records of pending tasks, staff responsible and signature routing.</li>
+      </ol>
     </div>
   </div>
-</section>
-
-<section>
-  <h2><span lang-block="zh">项目作品</span><span lang-block="en">Selected work</span></h2>
-  <p class="lead"><span lang-block="zh">每个项目都可以点进去，看完整的思路、关键判断和原文。</span><span lang-block="en">Open any project for the full reasoning, key decisions and original work.</span></p>
-  <div class="projs">
-
-  <a class="proj" href="work/snowy-2-0.html">
-    <div class="pmeta"><span>PMGT5872</span><span lang-block="zh">个人作业 · 2026.09</span><span lang-block="en">Individual · Sep 2026</span><span class="score">85%</span></div>
-    <h3><span lang-block="zh">Snowy 2.0：大型项目的相关方沟通为什么失效</span><span lang-block="en">Snowy 2.0: why stakeholder communication broke down</span></h3>
-    <p lang-block="zh">澳大利亚在建最大可再生能源项目，预算从 61 亿涨到 120 亿澳元。我拿公司 2019 年自己写下的沟通承诺做尺子，沿 2017–2026 年的时间线逐条核对，论证沟通在获批后就断档了，并提出持续情绪监测和咨询闭环两条建议。</p>
-    <p lang-block="en">Australia's largest renewable project, with its budget rising from AUD 6.1bn to 12bn. I used the company's own 2019 engagement promises as the yardstick, traced them through 2017–2026, showed engagement stalled after approval, and proposed continuous sentiment monitoring and a closed consultation loop.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>Stakeholder analysis</span><span>Evidence review</span><span>Academic writing</span></div>
-    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">用证据下判断 · 回应反方观点 · 建议可落地</span><span lang-block="en">Evidence-led judgement · tests counter-arguments · practical recommendations</span></div>
-    <span class="go"><span lang-block="zh">阅读分析与原文 →</span><span lang-block="en">Read the analysis →</span></span>
-  </a>
-
-  <a class="proj" href="work/ryde-risk-evaluation.html">
-    <div class="pmeta"><span>PMGT5891</span><span lang-block="zh">6 人小组 · 本人负责风险评价章节 · 2026.09</span><span lang-block="en">Group of 6 · I wrote the risk evaluation · Sep 2026</span></div>
-    <h3><span lang-block="zh">Ryde 医院改扩建：5.27 亿澳元项目的风险评价</span><span lang-block="en">Ryde Hospital: risk evaluation for a AUD 527m redevelopment</span></h3>
-    <p lang-block="zh">医院一边施工一边要正常接诊。我按 ISO 31000 制定风险分级准则和两条兜底规则，评估 5 项主要风险；两项风险同为 16 分时，按「后果能否挽回、影响几个目标」排出先后，并画出给管理层看的风险总览图。</p>
-    <p lang-block="en">The hospital must keep treating patients during construction. Following ISO 31000, I set risk criteria plus two override rules, evaluated five key risks, broke ties between equal scores by reversibility and objectives affected, and built the executive risk overview.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>ISO 31000</span><span>Risk matrix</span><span>Risk criteria</span><span>Prioritisation</span></div>
-    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">分数相同时说清先管哪个、为什么 · 把分析转成管理层结论</span><span lang-block="en">Explains what to tackle first and why · turns analysis into executive decisions</span></div>
-    <span class="go"><span lang-block="zh">查看评价过程与原文 →</span><span lang-block="en">See the evaluation →</span></span>
-  </a>
-
-  <a class="proj" href="work/pawconnect.html">
-    <div class="pmeta"><span>PMGT5871</span><span lang-block="zh">5 人 Scrum 团队 · 本人负责 Epic E1 · 2026.10–11</span><span lang-block="en">5-person Scrum team · I owned Epic E1 · Oct–Nov 2026</span></div>
-    <h3><span lang-block="zh">PawConnect：用 Scrum 三个 Sprint 做出宠物领养平台原型</span><span lang-block="en">PawConnect: a pet-adoption prototype in three Scrum sprints</span></h3>
-    <p lang-block="zh">团队在 Jira 管理 5 个 Epic、30 个用户故事，用 Softr 搭原型。我负责宠物浏览与搜索：写带验收标准的用户故事，交付列表和筛选功能，逐条测试和复测；前期还做了 Softr 可行性测试，结论决定了团队的工具选型。</p>
-    <p lang-block="en">The team ran 5 Epics and 30 user stories in Jira and built the prototype in Softr. I owned pet browsing and search: wrote stories with acceptance criteria, delivered list and filter features, and tested and retested each one. My early Softr feasibility test shaped the team's tool choice.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>Scrum</span><span>Jira</span><span>User stories</span><span>Softr</span></div>
-    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">把需求拆成可交付、可测试的任务 · 按验收标准测试</span><span lang-block="en">Breaks requirements into testable deliverables · tests against acceptance criteria</span></div>
-    <div class="metric"><span>Sprint 1: 17/17 pts</span><span>Sprint 2: 22 pts</span></div>
-    <span class="go"><span lang-block="zh">查看 Sprint 过程与截图 →</span><span lang-block="en">See the sprints →</span></span>
-  </a>
-
-  <a class="proj" href="work/nexusone.html">
-    <div class="pmeta"><span>PMGT5820</span><span lang-block="zh">基线由本人搭建 · 仪表盘个人完成 · 2026.08–11</span><span lang-block="en">I built the baseline · dashboard done solo · Aug–Nov 2026</span></div>
-    <h3><span lang-block="zh">NexusOne：7000 万澳元银行核心系统迁移的进度与成本控制</span><span lang-block="en">NexusOne: schedule and cost control for a AUD 70m core-banking migration</span></h3>
-    <p lang-block="zh">我主导用 MS Project 搭建执行基线：159 项任务、4 层 WBS、7 个强制里程碑。之后个人完成挣值分析和一页式状态仪表盘：SPI 0.851、CPI 0.871，预计完工成本 7,680 万，超出上限 677 万，向指导委员会提出需要决策的事项。期末我还写了收尾报告的执行摘要和结论，并负责全文整合。</p>
-    <p lang-block="en">I led the build of the execution baseline in Microsoft Project: 159 tasks, a 4-level WBS and 7 mandated milestones. I then did an individual earned-value analysis and a one-page status dashboard: SPI 0.851, CPI 0.871, EAC AUD 76.8m (6.77m over the cap), with decisions put to the steering committee. At close-out I wrote the executive summary and conclusion and integrated the report.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>MS Project</span><span>WBS</span><span>Critical path</span><span>Earned value</span></div>
-    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">从数据里找出核心问题 · 用一页纸向上汇报</span><span lang-block="en">Finds the core issue in the numbers · reports upward on one page</span></div>
-    <span class="go"><span lang-block="zh">查看基线、仪表盘与收尾报告 →</span><span lang-block="en">See baseline, dashboard and close-out →</span></span>
-  </a>
-
-  <a class="proj" href="work/greenfield.html">
+</section><section id="more-work"><h2><span lang-block="zh">更多项目</span><span lang-block="en">More projects</span></h2><div class="projs"><a class="proj" href="work/greenfield.html">
     <div class="pmeta"><span>PMGT5871</span><span lang-block="zh">5 人小组 · 本人负责成本、质量、资源三章 · 2026.10</span><span lang-block="en">Group of 5 · I wrote cost, quality and resources · Oct 2026</span></div>
     <h3><span lang-block="zh">Project Greenfield：880 万澳元社区体育馆的成本、质量与资源计划</span><span lang-block="en">Project Greenfield: cost, quality and resource plans for a AUD 8.8m pavilion</span></h3>
     <p lang-block="zh">按风险量化定不可预见费（50 万，覆盖期望损失的 120%），编出逐月预算和 S 曲线，写明挣值控制阈值；合稿时发现排程里施工期内部监督人员为零，补上人员计划和资源直方图。</p>
     <p lang-block="en">Set contingency from quantified risk (AUD 500k, 120% of EMV), built a monthly budget and S-curve with earned-value thresholds, and at merge found zero in-house supervision during construction, then added a staffing plan and histogram.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>Cost estimating</span><span>EMV contingency</span><span>Cost of quality</span><span>Resource histogram</span></div>
-    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">每个数字都有依据 · 发现跨章节矛盾</span><span lang-block="en">Every number justified · catches cross-chapter gaps</span></div>
     <span class="go"><span lang-block="zh">查看三章计划 →</span><span lang-block="en">See the plans →</span></span>
-  </a>
-
-  <a class="proj" href="work/inland-rail.html">
+  </a><a class="proj" href="work/snowy-2-0.html">
+    <div class="pmeta"><span>PMGT5872</span><span lang-block="zh">个人作业 · 2026.09</span><span lang-block="en">Individual · Sep 2026</span><span class="score">85%</span></div>
+    <h3><span lang-block="zh">Snowy 2.0：大型项目的相关方沟通为什么失效</span><span lang-block="en">Snowy 2.0: why stakeholder communication broke down</span></h3>
+    <p lang-block="zh">澳大利亚在建最大可再生能源项目，预算从 61 亿涨到 120 亿澳元。我拿公司 2019 年自己写下的沟通承诺做尺子，沿 2017–2026 年的时间线逐条核对，论证沟通在获批后就断档了，并提出持续情绪监测和咨询闭环两条建议。</p>
+    <p lang-block="en">Australia's largest renewable project, with its budget rising from AUD 6.1bn to 12bn. I used the company's own 2019 engagement promises as the yardstick, traced them through 2017–2026, showed engagement stalled after approval, and proposed continuous sentiment monitoring and a closed consultation loop.</p>
+    <span class="go"><span lang-block="zh">阅读分析与原文 →</span><span lang-block="en">Read the analysis →</span></span>
+  </a><a class="proj" href="work/inland-rail.html">
     <div class="pmeta"><span>PMGT5872</span><span lang-block="zh">小组展示 · 本人负责实施与交付 · 2026.10</span><span lang-block="en">Group presentation · I owned implementation · Oct 2026</span></div>
     <h3><span lang-block="zh">Inland Rail：重建社区信任的沟通实施方案</span><span lang-block="en">Inland Rail: an implementation plan for rebuilding community trust</span></h3>
     <p lang-block="zh">把沟通策略落到执行：先对齐事实、私下先告知受影响的土地所有者、再公开倾听、每次会后公布「你们说了，我们做了」；每个关切都有负责人和 48 小时升级时限。</p>
     <p lang-block="en">Turned the strategy into execution: align facts, tell affected landholders privately first, then listen publicly and publish "you said, we did" after each session; every concern has an owner and a 48-hour escalation clock.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>Engagement planning</span><span>Escalation design</span></div>
     <span class="go"><span lang-block="zh">查看两页方案 →</span><span lang-block="en">See the slides →</span></span>
-  </a>
-
-  <a class="proj" href="work/metro-excavation.html">
+  </a><a class="proj" href="work/metro-excavation.html">
     <div class="pmeta"><span lang-block="zh">本科毕业设计</span><span lang-block="en">Undergraduate thesis</span><span lang-block="zh">三江学院 · 2025</span><span lang-block="en">Sanjiang University · 2025</span><span class="score" lang-block="zh">良好</span></div>
     <h3><span lang-block="zh">南京地铁 5 号线云南路站：24.75 m 深基坑支护设计</span><span lang-block="en">Nanjing Metro Line 5: support design for a 24.75 m deep excavation</span></h3>
-    <p lang-block="zh">地下三层换乘站。独立完成从方案比选到出图的整套设计：钻孔灌注桩加旋喷止水，设五道内支撑；土压力、嵌固深度、配筋、整体稳定、抗倾覆、抗隆起全部手算，再用理正电算互相校核，并给出降水和监测方案。</p>
+    <p lang-block="zh">地下三层换乘站。独立完成从方案比选到出图的整套设计：钻孔灌注桩加旋喷止水，设冠梁加四层内支撑共五道支撑；土压力、嵌固深度、配筋、整体稳定、抗倾覆、抗隆起全部手算，再用理正电算互相校核，并给出降水和监测方案。</p>
     <p lang-block="en">A three-level interchange station. I completed the full design from option selection to drawings: bored piles with jet-grout cut-off and five strut levels. Earth pressure, embedment, reinforcement and stability checks were hand-calculated and cross-checked in Lizheng software, with dewatering and monitoring plans.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>AutoCAD</span><span lang-block="zh">理正深基坑</span><span lang-block="en">Lizheng</span><span>Excel</span><span lang-block="zh">国家规范</span><span lang-block="en">Chinese codes</span></div>
-    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">独立完成完整工程设计 · 手算与软件互校保证可靠</span><span lang-block="en">Full engineering design on my own · hand vs software cross-checks</span></div>
     <span class="go"><span lang-block="zh">查看设计过程、图纸与计算结果 →</span><span lang-block="en">See the design →</span></span>
-  </a>
-
-  <a class="proj" href="work/expansive-soil.html">
+  </a><a class="proj" href="work/expansive-soil.html">
     <div class="pmeta"><span lang-block="zh">大学生创新创业训练计划</span><span lang-block="en">Undergraduate research project</span><span lang-block="zh">项目负责人 · 2024</span><span lang-block="en">Project lead · 2024</span></div>
     <h3><span lang-block="zh">工业废渣改良膨胀土：动三轴试验研究</span><span lang-block="en">Expansive soil stabilised with industrial waste: dynamic triaxial tests</span></h3>
     <p lang-block="zh">作为负责人制定试验方案（矿渣与粉煤灰 3:7，围压 120、150、180 kPa 三档），带领三人团队完成配土、击实、养护和动三轴试验，分析循环荷载下滞回曲线的变化，主笔结题报告。</p>
     <p lang-block="en">As lead I designed the test programme (slag to fly ash 3:7; confining pressures of 120, 150 and 180 kPa), led a team of three through sample preparation, curing and dynamic triaxial testing, analysed hysteresis under cyclic loading, and was main author of the final report.</p>
-    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span lang-block="zh">土工试验</span><span lang-block="en">Geotechnical testing</span><span lang-block="zh">动三轴</span><span lang-block="en">Dynamic triaxial</span><span lang-block="zh">数据分析</span><span lang-block="en">Data analysis</span></div>
-    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">牵头科研项目从方案到结题 · 组织团队分工</span><span lang-block="en">Leads a project from design to report · organises team work</span></div>
     <span class="go"><span lang-block="zh">查看试验过程与结果 →</span><span lang-block="en">See the tests →</span></span>
-  </a>
-
-  </div>
-</section>
-
-<section>
+  </a></div></section><section>
   <h2><span lang-block="zh">技能</span><span lang-block="en">Skills</span></h2>
   <div class="skills">
-    <div><h4><span lang-block="zh">项目管理工具</span><span lang-block="en">PM tools</span></h4>Microsoft Project · Jira · Excel</div>
-    <div><h4><span lang-block="zh">方法</span><span lang-block="en">Methods</span></h4><span lang-block="zh">WBS · 关键路径 · 成本基线 · 敏捷/Scrum · ISO 31000</span><span lang-block="en">WBS · critical path · cost baselines · Agile/Scrum · ISO 31000</span></div>
+    <div><h4><span lang-block="zh">项目管理工具</span><span lang-block="en">PM tools</span></h4><a href="work/nexusone.html#dashboard">Microsoft Project</a> · <a href="work/pawconnect.html">Jira</a> · Excel</div>
+    <div><h4><span lang-block="zh">方法</span><span lang-block="en">Methods</span></h4><span lang-block="zh"><a href="work/nexusone.html">WBS · 关键路径 · 成本基线</a> · <a href="work/pawconnect.html">敏捷/Scrum</a> · <a href="work/ryde-risk-evaluation.html">ISO 31000</a></span><span lang-block="en"><a href="work/nexusone.html">WBS · critical path · cost baselines</a> · <a href="work/pawconnect.html">Agile/Scrum</a> · <a href="work/ryde-risk-evaluation.html">ISO 31000</a></span></div>
     <div><h4><span lang-block="zh">工程</span><span lang-block="en">Engineering</span></h4><span lang-block="zh">AutoCAD · 广联达 · 理正深基坑</span><span lang-block="en">AutoCAD · Glodon · Lizheng</span></div>
-    <div><h4><span lang-block="zh">语言</span><span lang-block="en">Languages</span></h4><span lang-block="zh">普通话（母语）· 英语（全英文硕士在读）</span><span lang-block="en">Mandarin (native) · English (professional working)</span></div>
+    <div><h4><span lang-block="zh">语言</span><span lang-block="en">Languages</span></h4><span lang-block="zh">普通话（母语）· 英语（全英文硕士在读）</span><span lang-block="en">Mandarin (native) · English (master’s coursework and presentations)</span></div>
   </div>
-</section>
-
-<section>
+</section><section>
   <h2><span lang-block="zh">教育</span><span lang-block="en">Education</span></h2>
   <div class="row">
     <div class="when">2026.02 – 2027.06</div>
@@ -239,22 +154,17 @@ footer{margin-top:48px;color:var(--muted);font-size:12.5px}
     <div class="what"><h3><span lang-block="zh">三江学院 · 土木工程本科</span><span lang-block="en">Sanjiang University · BEng Civil Engineering</span></h3>
     <p class="org"><span lang-block="zh">GPA 3.33/5.0，专业前 5%；一等、二等奖学金，优秀学生干部；班长、学习委员、读书会副会长</span><span lang-block="en">GPA 3.33/5.0, top 5%; First- and Second-Class Scholarships; Outstanding Student Leader; Class President</span></p></div>
   </div>
-</section>
-
-<section>
+</section><section id="contact">
   <h2><span lang-block="zh">联系</span><span lang-block="en">Contact</span></h2>
   <div class="contact">
-    <div><span>Email&nbsp;</span><code>sunny.o716.2oo3@gmail.com</code></div>
+    <div><span>Email&nbsp;</span><a href="mailto:sunny.o716.2oo3@gmail.com">sunny.o716.2oo3@gmail.com</a></div>
     <div><span>LinkedIn&nbsp;</span><a href="https://www.linkedin.com/in/xiang-sun-45580344a/" target="_blank" rel="noopener">xiang-sun-45580344a</a></div>
   </div>
-</section>
-<footer><span lang-block="zh">课程项目为悉尼大学课程作业，仅展示本人负责部分的摘要。</span><span lang-block="en">Course projects are University of Sydney assessments; only summaries of my own work are shown.</span></footer>
-</div>
-
-<script>
+</section><footer><span lang-block="zh">课程项目展示本人负责的工作，模拟情景与团队结果在各项目页分别注明。</span><span lang-block="en">Coursework presents my own contributions, with simulated scenarios and team results identified on each project page.</span></footer></main><script>
 (function(){
   var root=document.documentElement;
   function set(l){root.setAttribute('data-lang',l);root.lang=l==='zh'?'zh-CN':'en';
+    document.title=l==='zh'?'孙祥｜项目管理 / PMO 作品集':'Xiang Sun | Project Management / PMO Portfolio';
     document.querySelectorAll('.langs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.l===l));});
     try{localStorage.setItem('lang',l)}catch(e){}}
   var start=location.hash==='#en'?'en':(location.hash==='#zh'?'zh':null);
@@ -263,7 +173,4 @@ footer{margin-top:48px;color:var(--muted);font-size:12.5px}
   document.querySelectorAll('.langs button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.l);history.replaceState(null,'','#'+b.dataset.l)})});
   window.addEventListener('hashchange',function(){if(location.hash==='#en'||location.hash==='#zh')set(location.hash.slice(1))});
 })();
-</script>
-
-</body>
-</html>
+</script></body></html>
