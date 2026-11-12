@@ -49,3 +49,11 @@ footer{margin-top:48px;color:var(--muted);font-size:12.5px;border-top:1px solid 
 [lang-block]{display:none}
 html[data-lang="zh"] [lang-block="zh"],html[data-lang="en"] [lang-block="en"]{display:block}
 html[data-lang="zh"] span[lang-block="zh"],html[data-lang="en"] span[lang-block="en"]{display:inline}
+caption{caption-side:top;text-align:left;font-size:13px;color:var(--muted);padding:4px 0}
+.paper ol{font-family:var(--serif);font-size:16px;max-width:68ch;margin:0 0 14px}
+.paper table{font-family:var(--sans)}
+.dl{display:inline-block;border:1px solid var(--accent);border-radius:8px;padding:8px 14px;font-weight:600;text-decoration:none}
+.dl:hover{background:var(--accent-soft)}
+.gallery a{display:block}
+img.w420{width:min(100%,420px)}
+img.w520{width:min(100%,520px)}

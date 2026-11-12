@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>地铁深基坑支护设计｜孙祥 Xiang Sun</title>
+<meta name="description" content="南京地铁 5 号线云南路站深基坑支护设计，三江学院土木工程本科毕业设计。">
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="wrap">
+<div class="top">
+  <a href="../index.html"><span lang-block="zh">← 返回首页</span><span lang-block="en">← Back to portfolio</span></a>
+  <div class="langs" role="group" aria-label="Language"><button data-l="zh" aria-pressed="true">中文</button><button data-l="en" aria-pressed="false">EN</button></div>
+</div>
+
+<h1><span lang-block="zh">南京地铁 5 号线云南路站：深基坑支护设计</span><span lang-block="en">Nanjing Metro Line 5, Yunnan Road Station: Deep Excavation Support Design</span></h1>
+<p class="sub"><span lang-block="zh">本科毕业设计 · 三江学院土木工程 · 独立完成</span><span lang-block="en">Undergraduate thesis · Sanjiang University, Civil Engineering · individual</span></p>
+<div class="facts">
+  <span>2025</span>
+  <span><span lang-block="zh">成绩：良好</span><span lang-block="en">Grade: Good</span></span>
+  <span><span lang-block="zh">开挖深度 24.75 m</span><span lang-block="en">Excavation 24.75 m</span></span>
+  <span>AutoCAD · <span lang-block="zh">理正深基坑</span><span lang-block="en">Lizheng</span> · Excel</span>
+</div>
+
+<div class="card">
+  <h2><span lang-block="zh">简介</span><span lang-block="en">Summary</span></h2>
+  <p lang-block="zh">为南京老城区一座地下三层换乘站设计深基坑支护。我独立完成从方案比选、计算、验算到出图的全过程：钻孔灌注桩加旋喷桩止水，设冠梁加四层内支撑共五道支撑；土压力、嵌固深度、配筋和各项稳定性先手算，再用理正深基坑软件电算互相校核，最后给出降水方案和监测方案。</p>
+  <p lang-block="en">Excavation support design for a three-level interchange station in Nanjing's old city. I did the whole design on my own, from option selection through calculation and checks to drawings: bored piles with a jet-grout cut-off, and five strut levels (capping beam plus four internal levels). Earth pressure, embedment, reinforcement and stability were hand-calculated, then cross-checked in Lizheng excavation software, followed by dewatering and monitoring plans.</p>
+  <ol lang-block="zh">
+    <li><b>用到的技能：</b>AutoCAD 制图、理正深基坑建模与计算、Excel 计算模板、国家与南京地方规范（JGJ 120-2012 等 16 部）</li>
+    <li><b>展现的能力：</b>独立完成一项完整的工程设计；用手算和软件互相校核，保证结果可靠</li>
+  </ol>
+  <ol lang-block="en">
+    <li><b>Skills:</b> AutoCAD drafting, Lizheng modelling and analysis, Excel calculation templates, 16 national and Nanjing codes (incl. JGJ 120-2012)</li>
+    <li><b>Shows:</b> a complete engineering design done independently, with hand calculations and software cross-checked for reliability</li>
+  </ol>
+</div>
+
+<h2><span lang-block="zh">1. 背景</span><span lang-block="en">1. Context</span></h2>
+<div lang-block="zh">
+  <p>云南路站位于云南路与北京西路交叉口，是 5 号线与已运营 4 号线的换乘站：地下三层岛式车站，站台长 140 m，底板埋深约 23.3 m。</p>
+  <p>难点有三个：</p>
+  <ol>
+    <li><b>周边环境复杂。</b>老城区，周边建筑密集、交通繁忙，地下有大量强电、弱电和给排水管线，场地受限，只能半幅铺盖疏解交通。</li>
+    <li><b>地质上软下硬。</b>上部为填土和粉质粘土，下部为风化泥岩、砂砾岩和安山岩，基岩裂隙水有承压性。</li>
+    <li><b>安全等级为一级。</b>开挖深度超过 12 m，又紧邻重要设施，重要性系数取 1.1，各项验算要求最高。</li>
+  </ol>
+</div>
+<div lang-block="en">
+  <p>The station sits at the Yunnan Road and Beijing West Road intersection, an interchange with the operating Line 4: a three-level island station with a 140 m platform and a base slab about 23.3 m deep.</p>
+  <p>Three things made it hard:</p>
+  <ol>
+    <li><b>A crowded site.</b> Old city, dense buildings, heavy traffic, many power, telecom and water utilities, and room for only half-width deck traffic diversion.</li>
+    <li><b>Soft over hard ground.</b> Fill and silty clay over weathered mudstone, conglomerate and andesite, with confined fissure water in the bedrock.</li>
+    <li><b>Safety class 1.</b> Over 12 m deep beside critical facilities, so an importance factor of 1.1 and the strictest checks.</li>
+  </ol>
+</div>
+
+<h2><span lang-block="zh">2. 我的思路</span><span lang-block="en">2. How I approached it</span></h2>
+<ol lang-block="zh">
+  <li><b>方案比选：用排除法选出内撑式。</b>悬臂式只适合土质好、深度小的基坑；周边土层提供的锚固力不够，拉锚式不行；重力式太宽，场地放不下，变形也控制不住。内撑式适用各类土层和任意深度，相邻的 4 号线基坑也用了内撑式，已经得到验证。</li>
+  <li><b>结构选型。</b>围护桩为直径 1200 mm、间距 1500 mm 的钻孔灌注桩，桩间用直径 800 mm 旋喷桩止水；竖向设冠梁加四层内支撑。</li>
+  <li><b>分工况计算土压力。</b>按朗肯土压力理论，逐个开挖工况算主动和被动土压力，每个工况都手算一遍，再和理正的结果对照。</li>
+  <li><b>定嵌固深度，做稳定验算。</b>桩底要嵌进风化岩层，先假定深度再验算抗倾覆，最终嵌固 12.8 m，桩长约 37.6 m；接着做抗隆起和整体稳定验算。</li>
+  <li><b>配筋和支撑设计。</b>按内力计算围护桩、冠梁、腰梁和支撑的配筋，复核正截面抗弯和斜截面抗剪承载力。</li>
+  <li><b>降水和监测。</b>坑内疏干加明排，水位降到坑底以下 0.5 m；监测 7 个项目，每项给出监测频率和预警值。</li>
+  <li><b>整体建模。</b>用理正三维模型把各层支撑和桩连成整体再算一次，得到每层支撑的位移、弯矩和轴力分布。</li>
+</ol>
+<ol lang-block="en">
+  <li><b>Option selection by elimination.</b> Cantilever walls suit only good soil and shallow pits; the soil cannot provide enough anchor capacity for tiebacks; a gravity wall is too wide for the site and cannot control deformation. Internal struts suit any soil and depth, and were already proven on the adjacent Line 4 excavation.</li>
+  <li><b>Structure.</b> 1200 mm bored piles at 1500 mm centres, 800 mm jet-grout columns between piles, and a capping beam plus four strut levels.</li>
+  <li><b>Earth pressure by stage.</b> Rankine active and passive pressures for each excavation stage, each calculated by hand and compared with Lizheng.</li>
+  <li><b>Embedment and stability.</b> Piles socket into weathered rock: assume a depth, check overturning, and settle on 12.8 m embedment (pile length about 37.6 m); then check basal heave and overall stability.</li>
+  <li><b>Reinforcement and struts.</b> Reinforcement for piles, capping beam, walings and struts from the internal forces, with bending and shear capacity checks.</li>
+  <li><b>Dewatering and monitoring.</b> In-pit drainage plus open pumping to 0.5 m below formation; seven monitoring items, each with frequency and alarm values.</li>
+  <li><b>Whole-model run.</b> A 3D Lizheng model joining piles and all strut levels to get displacement, bending moment and axial force for each level.</li>
+</ol>
+
+<div class="gallery">
+  <figure>
+    <img src="img/metro-struts-3d.png" alt="理正三维模型：围护桩与五道内支撑" width="829" height="666" loading="lazy">
+    <figcaption><span lang-block="zh">理正三维模型：围护桩与五道支撑</span><span lang-block="en">Lizheng 3D model: piles and five strut levels</span></figcaption>
+  </figure>
+  <figure>
+    <img src="img/metro-struts-plan.png" alt="冠梁层内支撑平面布置" width="1226" height="812" loading="lazy">
+    <figcaption><span lang-block="zh">冠梁层支撑平面布置：两端角撑，中部对撑加立柱</span><span lang-block="en">Capping-beam strut plan: corner braces at the ends, cross struts with king posts in the middle</span></figcaption>
+  </figure>
+</div>
+
+<h2><span lang-block="zh">3. 关键判断</span><span lang-block="en">3. Key judgements</span></h2>
+<ol lang-block="zh">
+  <li><b>坚持手算和电算两条线。</b>软件算得快，但出错不容易发现。我每个工况都先手算，再用理正复核，例如工况二在 24.3 m 深处土压力两者都是 677.43 kPa。两条线对得上，结果才可信。</li>
+  <li><b>嵌固深度由验算决定，不靠经验取值。</b>先假定嵌入风化岩的深度，算抗倾覆安全系数是否达到一级基坑要求的 1.3，再核对构造要求（不小于 0.2 倍开挖深度），最后取 12.8 m。</li>
+  <li><b>参考相邻工程，但不照搬。</b>4 号线基坑用内撑式成功，是选型的有力证据；但支撑道数、桩径和配筋都按本站的深度和土层重新计算。</li>
+</ol>
+<ol lang-block="en">
+  <li><b>Two independent lines: hand and software.</b> Software is fast but its errors are hard to spot. Every stage was hand-calculated first and then checked in Lizheng; for example, in stage 2 both gave 677.43 kPa at 24.3 m depth. Agreement between the two is what makes the result trustworthy.</li>
+  <li><b>Embedment from checks, not rule of thumb.</b> Assume a rock socket depth, confirm the overturning factor meets 1.3 for class 1, check the 0.2H detailing rule, then fix 12.8 m.</li>
+  <li><b>Learn from the neighbour, do not copy it.</b> Line 4's success supported the choice of struts, but strut levels, pile size and reinforcement were all recalculated for this station's depth and ground.</li>
+</ol>
+
+<figure>
+  <img src="img/metro-earth-pressure-hand.png" alt="工况二土压力手算分布图，单位 kPa" width="1039" height="1532" loading="lazy" class="w420">
+  <figcaption><span lang-block="zh">工况二土压力手算分布图（单位 kPa），与理正电算结果逐点核对</span><span lang-block="en">Stage 2 earth pressure by hand (kPa), checked point by point against Lizheng</span></figcaption>
+</figure>
+
+<h2><span lang-block="zh">4. 结果</span><span lang-block="en">4. Results</span></h2>
+<div class="tablewrap">
+<table>
+  <tr><th><span lang-block="zh">验算项目</span><span lang-block="en">Check</span></th><th><span lang-block="zh">计算值</span><span lang-block="en">Result</span></th><th><span lang-block="zh">规范要求</span><span lang-block="en">Required</span></th></tr>
+  <tr><td><span lang-block="zh">抗倾覆安全系数</span><span lang-block="en">Overturning</span></td><td>1.91</td><td>≥ 1.3</td></tr>
+  <tr><td><span lang-block="zh">坑底抗隆起安全系数</span><span lang-block="en">Basal heave</span></td><td>21.44</td><td>≥ 1.8</td></tr>
+  <tr><td><span lang-block="zh">整体稳定安全系数</span><span lang-block="en">Overall stability</span></td><td>2.69</td><td>≥ 1.35</td></tr>
+  <tr><td><span lang-block="zh">嵌固深度</span><span lang-block="en">Embedment</span></td><td>12.8 m</td><td>≥ 0.2H = 4.95 m</td></tr>
+</table>
+</div>
+<p lang-block="zh">各项验算均满足一级基坑要求。监测方案按一级基坑设定预警值：围护结构水平位移累计不超过 0.3% 开挖深度、变化速率 3–5 mm/天；周边地表沉降不超过 0.2% 开挖深度；支撑轴力不超过设计值的 80%。</p>
+<p lang-block="en">All checks meet class 1 requirements. Monitoring alarms follow class 1: cumulative wall displacement 0.3% of depth (3–5 mm/day), ground settlement 0.2% of depth, strut force 80% of design value.</p>
+
+<figure>
+  <img src="img/metro-displacement.png" alt="理正整体计算：开挖至坑底时的三维位移云图，单位 mm" width="961" height="1080" loading="lazy" class="w520">
+  <figcaption><span lang-block="zh">整体计算：开挖至坑底工况的三维位移（单位 mm）</span><span lang-block="en">Whole model: 3D displacement at final excavation (mm)</span></figcaption>
+</figure>
+
+<h2 id="drawings"><span lang-block="zh">施工图纸</span><span lang-block="en">Construction drawings</span></h2>
+<p lang-block="zh">共 9 张 A3 施工图（AutoCAD 绘制）：设计总说明、支护结构平面图和剖面图、各层支撑平面图、监测布置图、节点大样图、施工工况图。下面是其中 4 张，点击图片可以看大图。</p>
+<p lang-block="en">Nine A3 construction drawings in AutoCAD: general notes, support plan and section, strut plans for each level, monitoring layout, details and construction stages. Four are shown below; click to enlarge.</p>
+<p><a class="dl" href="metro-drawings.pdf" download><span lang-block="zh">下载全套图纸 PDF（9 张，1.5 MB）</span><span lang-block="en">Download all drawings (PDF, 9 sheets, 1.5 MB)</span></a></p>
+<div class="gallery">
+  <figure><a href="img/metro-dwg-section.png"><img src="img/metro-dwg-section.png" alt="支护结构剖面图：钻孔灌注桩、冠梁与四道钢支撑，桩长 37.551 m，嵌固 12.8 m" width="1939" height="1399" loading="lazy"></a>
+    <figcaption><span lang-block="zh">04 支护结构剖面图：左侧为地层柱状，右侧为桩与五道支撑的竖向布置</span><span lang-block="en">04 Support section: soil profile on the left, piles and five strut levels on the right</span></figcaption></figure>
+  <figure><a href="img/metro-dwg-plan.png"><img src="img/metro-dwg-plan.png" alt="支护结构平面图" width="1939" height="1399" loading="lazy"></a>
+    <figcaption><span lang-block="zh">03 支护结构平面图</span><span lang-block="en">03 Support plan</span></figcaption></figure>
+  <figure><a href="img/metro-dwg-strut1.png"><img src="img/metro-dwg-strut1.png" alt="第一层混凝土支撑平面图" width="1939" height="1399" loading="lazy"></a>
+    <figcaption><span lang-block="zh">05 第一层混凝土支撑平面图</span><span lang-block="en">05 First-level concrete strut plan</span></figcaption></figure>
+  <figure><a href="img/metro-dwg-stages.png"><img src="img/metro-dwg-stages.png" alt="施工工况图：分步开挖与支撑安装顺序" width="1939" height="1399" loading="lazy"></a>
+    <figcaption><span lang-block="zh">09 施工工况图：从施工围挡、铺盖板到逐层开挖、架设支撑、换撑的顺序</span><span lang-block="en">09 Construction stages: from hoarding and deck to staged excavation, strutting and re-propping</span></figcaption></figure>
+</div>
+<p class="note"><span lang-block="zh">图签中的学号、班级和导师姓名已删除。</span><span lang-block="en">Student number, class and supervisor name have been removed from the title blocks.</span></p>
+
+<h2><span lang-block="zh">5. 不足与反思</span><span lang-block="en">5. Limits and reflection</span></h2>
+<ol lang-block="zh">
+  <li><b>经济性没有展开。</b>全段只用了一种配筋的灌注桩。实际工程应按不同区段的受力分段配筋，可以省下不少钢筋。</li>
+  <li><b>方案比选偏定性。</b>四种方案是按适用条件排除的，如果重做，我会对两种可行方案做造价和工期的量化对比。</li>
+  <li><b>监测停留在方案层面。</b>写了监测什么、多久测一次、预警值多少，但没有写超过预警值后具体怎么处置。</li>
+</ol>
+<ol lang-block="en">
+  <li><b>Economy not explored.</b> One pile reinforcement scheme was used throughout; in practice, zoning reinforcement by load would save steel.</li>
+  <li><b>Qualitative option selection.</b> Options were ruled out by applicability; in a redo I would compare cost and time for the two feasible options.</li>
+  <li><b>Monitoring stops at the plan.</b> It sets what to measure, how often and the alarm levels, but not the response once an alarm is triggered.</li>
+</ol>
+
+<h2><span lang-block="zh">6. 和实际工作的关系</span><span lang-block="en">6. Why it matters in practice</span></h2>
+<p lang-block="zh">读项目管理之后再看这份设计，我更在意的是它背后的管理问题：方案比选就是决策，监测预警就是风险控制，手算电算互校就是质量保证。懂设计和计算，能让我在项目管理岗位上和设计、施工单位说同一种语言。</p>
+<p lang-block="en">Looking back after studying project management, the design maps onto management work: option selection is a decision, monitoring alarms are risk control, and hand-versus-software checks are quality assurance. Understanding the engineering lets me speak the same language as designers and contractors.</p>
+
+<h2><span lang-block="zh">7. 原文摘录：方案比选（第 2.3 节）</span><span lang-block="en">7. Excerpt: option selection (Section 2.3, in Chinese)</span></h2>
+<p class="note"><span lang-block="zh">毕业设计全文约 3 万字，含大量公式和计算表，这里只摘录方案比选一节，内容未改动。</span><span lang-block="en">The full thesis is about 30,000 Chinese characters with many formulas and tables; only the option-selection section is quoted here, unchanged.</span></p>
+<article class="paper" lang="zh-CN">
+<p>针对云南路站的具体情况，对多种支护方案进行比较和分析。考虑基坑深度、周边环境、工程地质条件、水文地质条件等因素，首先悬臂式支挡结构只适用于土质好、埋深小的基坑，考虑到此基坑周围复杂，土质一般，同时埋深较大，明显不符合悬臂式条件，因此排除。其次拉锚式支挡结构受土层的影响较大，而本基坑周围土层提供锚固力明显小于所需结构，因此排除。考虑重力式支挡结构通常较笨重，宽度较大，而在固定空间内无法适应，由于基坑变形要求大、开挖深度深，明显不符，因此排除。最后考虑内撑式支挡结构可适用于砂土层粉土层、黏性土层、特殊土层等各类土层和任意基坑深度，符合本基坑要求，且原四号线基坑采用内撑式支挡结构已得到验证，考虑基坑深度、周边环境、工程地质条件、水文地质条件等因素，采用多层内撑式支挡结构。</p>
+</article>
+
+<footer><span lang-block="zh">三江学院土木工程学院本科毕业设计，独立完成。图纸与计算图为本人用 AutoCAD 和理正深基坑软件绘制。</span><span lang-block="en">Undergraduate thesis, Sanjiang University, completed individually. Figures produced by me in Lizheng and AutoCAD.</span></footer>
+</div>
+<script src="page.js"></script>
+</body>
+</html>

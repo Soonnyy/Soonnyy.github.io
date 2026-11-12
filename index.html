@@ -60,6 +60,22 @@ a{color:var(--accent)}
 [lang-block]{display:none}
 html[data-lang="zh"] [lang-block="zh"],html[data-lang="en"] [lang-block="en"]{display:block}
 html[data-lang="zh"] span[lang-block="zh"],html[data-lang="en"] span[lang-block="en"]{display:inline}
+.lead{color:var(--muted);margin:-8px 0 16px;font-size:14px}
+.projs{display:grid;gap:16px}
+.proj{display:block;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:18px 20px;color:inherit;text-decoration:none}
+a.proj:hover{border-color:var(--accent)}
+a.proj:hover .go{text-decoration:underline}
+.proj.soon{border-left-color:var(--bar)}
+.pmeta{display:flex;flex-wrap:wrap;gap:6px 14px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.pmeta .score{color:var(--accent);font-weight:700}
+.proj h3{font-size:19px;margin:8px 0 8px}
+.proj p{margin:0 0 10px;max-width:70ch}
+.pskill{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px;margin-top:6px;font-size:13.5px}
+.pskill b{font-size:12px;color:var(--muted);font-weight:600;min-width:3em}
+.pskill>span:not([lang-block]),.pskill>span[lang-block]{border:1px solid var(--line);border-radius:6px;padding:1px 8px;background:var(--bg)}
+html[data-lang="zh"] .pskill>[lang-block="en"],html[data-lang="en"] .pskill>[lang-block="zh"]{display:none}
+.go{display:inline-block;margin-top:14px;font-weight:600;color:var(--accent);font-size:14.5px}
+.go.muted{color:var(--muted);font-weight:500;font-size:13px}
 footer{margin-top:48px;color:var(--muted);font-size:12.5px}
 @media (max-width:560px){.row{grid-template-columns:1fr;gap:4px}}
 </style>
@@ -114,73 +130,70 @@ footer{margin-top:48px;color:var(--muted);font-size:12.5px}
 </section>
 
 <section>
-  <h2><span lang-block="zh">项目</span><span lang-block="en">Projects</span></h2>
-  <div class="row">
-    <div class="when">2026.09</div>
-    <div class="what">
-      <h3><a href="work/snowy-2-0.html"><span lang-block="zh">Snowy 2.0 相关方沟通与社区参与：批判性案例分析</span><span lang-block="en">Snowy 2.0 – Stakeholder Communication &amp; Community Engagement</span></a></h3>
-      <p class="org"><span lang-block="zh">悉尼大学 PMGT5872 · 个人作业 · 85%</span><span lang-block="en">University of Sydney, PMGT5872 · individual · 85%</span></p>
-      <ol lang-block="zh"><li>对照 2019 年环评承诺与 2024 年社区调查、2025 年成本公告，论证项目获批后社区沟通明显减弱，提出持续情绪监测与闭环反馈两条建议</li></ol>
-      <ol lang-block="en"><li>Compared 2019 engagement promises with 2024 community research and a 2025 cost release; showed engagement thinned after approval and recommended continuous sentiment monitoring and a closed feedback loop</li></ol>
-      <p class="org"><a href="work/snowy-2-0.html"><span lang-block="zh">阅读全文 →</span><span lang-block="en">Read the full paper →</span></a></p>
-    </div>
+  <h2><span lang-block="zh">项目作品</span><span lang-block="en">Selected work</span></h2>
+  <p class="lead"><span lang-block="zh">每个项目都可以点进去，看完整的思路、关键判断和原文。</span><span lang-block="en">Open any project for the full reasoning, key decisions and original work.</span></p>
+  <div class="projs">
+
+  <a class="proj" href="work/snowy-2-0.html">
+    <div class="pmeta"><span>PMGT5872</span><span lang-block="zh">个人作业 · 2026.09</span><span lang-block="en">Individual · Sep 2026</span><span class="score">85%</span></div>
+    <h3><span lang-block="zh">Snowy 2.0：大型项目的相关方沟通为什么失效</span><span lang-block="en">Snowy 2.0: why stakeholder communication broke down</span></h3>
+    <p lang-block="zh">澳大利亚在建最大可再生能源项目，预算从 61 亿涨到 120 亿澳元。我拿公司 2019 年自己写下的沟通承诺做尺子，沿 2017–2026 年的时间线逐条核对，论证沟通在获批后就断档了，并提出持续情绪监测和咨询闭环两条建议。</p>
+    <p lang-block="en">Australia's largest renewable project, with its budget rising from AUD 6.1bn to 12bn. I used the company's own 2019 engagement promises as the yardstick, traced them through 2017–2026, showed engagement stalled after approval, and proposed continuous sentiment monitoring and a closed consultation loop.</p>
+    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>Stakeholder analysis</span><span>Evidence review</span><span>Academic writing</span></div>
+    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">用证据下判断 · 回应反方观点 · 建议可落地</span><span lang-block="en">Evidence-led judgement · tests counter-arguments · practical recommendations</span></div>
+    <span class="go"><span lang-block="zh">阅读分析与原文 →</span><span lang-block="en">Read the analysis →</span></span>
+  </a>
+
+  <a class="proj" href="work/ryde-risk-evaluation.html">
+    <div class="pmeta"><span>PMGT5891</span><span lang-block="zh">6 人小组 · 本人负责风险评价章节 · 2026.09</span><span lang-block="en">Group of 6 · I wrote the risk evaluation · Sep 2026</span></div>
+    <h3><span lang-block="zh">Ryde 医院改扩建：5.27 亿澳元项目的风险评价</span><span lang-block="en">Ryde Hospital: risk evaluation for a AUD 527m redevelopment</span></h3>
+    <p lang-block="zh">医院一边施工一边要正常接诊。我按 ISO 31000 制定风险分级准则和两条兜底规则，评估 5 项主要风险；两项风险同为 16 分时，按「后果能否挽回、影响几个目标」排出先后，并画出给管理层看的风险总览图。</p>
+    <p lang-block="en">The hospital must keep treating patients during construction. Following ISO 31000, I set risk criteria plus two override rules, evaluated five key risks, broke ties between equal scores by reversibility and objectives affected, and built the executive risk overview.</p>
+    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>ISO 31000</span><span>Risk matrix</span><span>Risk criteria</span><span>Prioritisation</span></div>
+    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">分数相同时说清先管哪个、为什么 · 把分析转成管理层结论</span><span lang-block="en">Explains what to tackle first and why · turns analysis into executive decisions</span></div>
+    <span class="go"><span lang-block="zh">查看评价过程与原文 →</span><span lang-block="en">See the evaluation →</span></span>
+  </a>
+
+  <div class="proj soon">
+    <div class="pmeta"><span>PMGT5871</span><span lang-block="zh">5 人 Scrum 团队 · 本人负责 Epic E1 · 2026.10–11</span><span lang-block="en">5-person Scrum team · I owned Epic E1 · Oct–Nov 2026</span></div>
+    <h3><span lang-block="zh">PawConnect：用 Scrum 三个 Sprint 做出宠物领养平台原型</span><span lang-block="en">PawConnect: a pet-adoption prototype in three Scrum sprints</span></h3>
+    <p lang-block="zh">团队在 Jira 管理 5 个 Epic、30 个用户故事，用 Softr 搭原型。我负责宠物浏览与搜索：写带验收标准的用户故事，交付列表和筛选功能，逐条测试和复测；前期还做了 Softr 可行性测试，结论决定了团队的工具选型。</p>
+    <p lang-block="en">The team ran 5 Epics and 30 user stories in Jira and built the prototype in Softr. I owned pet browsing and search: wrote stories with acceptance criteria, delivered list and filter features, and tested and retested each one. My early Softr feasibility test shaped the team's tool choice.</p>
+    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>Scrum</span><span>Jira</span><span>User stories</span><span>Softr</span></div>
+    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">把需求拆成可交付、可测试的任务 · 按验收标准测试</span><span lang-block="en">Breaks requirements into testable deliverables · tests against acceptance criteria</span></div>
+    <div class="metric"><span>Sprint 1: 17/17 pts</span><span>Sprint 2: 22 pts</span></div>
+    <span class="go muted"><span lang-block="zh">出分后上线详情</span><span lang-block="en">Details after grading</span></span>
   </div>
-  <div class="row">
-    <div class="when">2026.08</div>
-    <div class="what">
-      <h3><span lang-block="zh">银行核心存款与账户迁移项目执行基线（模拟项目）</span><span lang-block="en">Project Execution Baseline – Core Deposits &amp; Accounts Migration (simulation)</span></h3>
-      <p class="org"><span lang-block="zh">悉尼大学 PMGT5820 · 本人独立搭建基线</span><span lang-block="en">University of Sydney, PMGT5820 · baseline built alone</span></p>
-      <ol lang-block="zh">
-        <li>MS Project 基线：159 项任务、4 层 WBS、7 个项目群强制里程碑，约 4.3 万工时</li>
-        <li>发现里程碑被硬约束锁死、关键路径失真，改为逻辑驱动，3 个关键里程碑浮时为零</li>
-        <li>修正负成本错误，人工成本由 157 万澳元补齐至 641 万；补上与 3 个兄弟项目之间遗漏的对账接口</li>
-      </ol>
-      <ol lang-block="en">
-        <li>Microsoft Project baseline: 159 tasks, 4-level WBS, 7 mandated program milestones, about 43,300 labour hours</li>
-        <li>Replaced hard-pinned milestones with logic-driven links, leaving three key milestones at zero float</li>
-        <li>Fixed a negative-cost error (labour cost AUD 1.57m → 6.41m) and added a reconciliation interface missing between three sibling projects</li>
-      </ol>
-      <div class="budget" aria-label="Cost against budget">
-        <div class="track"><div class="fill"></div></div>
-        <div class="cap"><span>AUD 66.9m</span><span>cap AUD 70.0m</span></div>
-      </div>
-    </div>
+
+  <div class="proj soon">
+    <div class="pmeta"><span>PMGT5820</span><span lang-block="zh">小组项目（Group 11）· 2026.08–09</span><span lang-block="en">Group project (Group 11) · Aug–Sep 2026</span></div>
+    <h3><span lang-block="zh">NexusOne：7000 万澳元银行核心系统迁移的进度与成本控制</span><span lang-block="en">NexusOne: schedule and cost control for a AUD 70m core-banking migration</span></h3>
+    <p lang-block="zh">用 MS Project 搭建执行基线：159 项任务、4 层 WBS、7 个强制里程碑。之后个人完成挣值分析和一页式状态仪表盘：SPI 0.851、CPI 0.871，预计完工成本 7,680 万，超出上限 677 万，向指导委员会提出需要决策的事项。</p>
+    <p lang-block="en">Built the execution baseline in Microsoft Project: 159 tasks, a 4-level WBS and 7 mandated milestones. I then did an individual earned-value analysis and a one-page status dashboard: SPI 0.851, CPI 0.871, EAC AUD 76.8m (6.77m over the cap), with decisions put to the steering committee.</p>
+    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>MS Project</span><span>WBS</span><span>Critical path</span><span>Earned value</span></div>
+    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">从数据里找出核心问题 · 用一页纸向上汇报</span><span lang-block="en">Finds the core issue in the numbers · reports upward on one page</span></div>
+    <span class="go muted"><span lang-block="zh">出分后上线详情</span><span lang-block="en">Details after grading</span></span>
   </div>
-  <div class="row">
-    <div class="when">2026.10 – 2026.11</div>
-    <div class="what">
-      <h3><span lang-block="zh">PawConnect 宠物领养平台原型（敏捷 Scrum）</span><span lang-block="en">PawConnect – Agile Pet Adoption Platform Prototype (Scrum)</span></h3>
-      <p class="org"><span lang-block="zh">悉尼大学 PMGT5871 · 5 人 Scrum 团队</span><span lang-block="en">University of Sydney, PMGT5871 · five-member Scrum team</span></p>
-      <ol lang-block="zh">
-        <li>在 Jira 管理 5 个 Epic、30 个用户故事，一周一个 Sprint（计划会、站会、评审、回顾），用 Softr 搭建原型</li>
-        <li>负责 Epic E1（宠物浏览与检索）：编写 6 个带 Given/When/Then 验收标准的用户故事并交付列表与筛选功能</li>
-        <li>牵头 Softr 工具可行性测试（登录、权限、申请流程、套餐限制），结论用于团队选型与验收标准</li>
-      </ol>
-      <ol lang-block="en">
-        <li>Managed 5 Epics and 30 user stories in Jira over one-week Sprints with planning, daily scrums, reviews and retrospectives; prototype built in Softr</li>
-        <li>Owned Epic E1 (pet browsing &amp; search): wrote six stories with Given/When/Then acceptance criteria and delivered the list and filter features</li>
-        <li>Ran the Softr feasibility test (logins, roles, application flow, plan limits) that shaped the team's tool choice</li>
-      </ol>
-      <div class="metric"><span>Sprint 1: 6/6 stories · 17 pts</span><span>12 stories accepted · 39 pts</span></div>
-    </div>
+
+  <a class="proj" href="work/metro-excavation.html">
+    <div class="pmeta"><span lang-block="zh">本科毕业设计</span><span lang-block="en">Undergraduate thesis</span><span lang-block="zh">三江学院 · 2025</span><span lang-block="en">Sanjiang University · 2025</span><span class="score" lang-block="zh">良好</span></div>
+    <h3><span lang-block="zh">南京地铁 5 号线云南路站：24.75 m 深基坑支护设计</span><span lang-block="en">Nanjing Metro Line 5: support design for a 24.75 m deep excavation</span></h3>
+    <p lang-block="zh">地下三层换乘站。独立完成从方案比选到出图的整套设计：钻孔灌注桩加旋喷止水，设五道内支撑；土压力、嵌固深度、配筋、整体稳定、抗倾覆、抗隆起全部手算，再用理正电算互相校核，并给出降水和监测方案。</p>
+    <p lang-block="en">A three-level interchange station. I completed the full design from option selection to drawings: bored piles with jet-grout cut-off and five strut levels. Earth pressure, embedment, reinforcement and stability checks were hand-calculated and cross-checked in Lizheng software, with dewatering and monitoring plans.</p>
+    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span>AutoCAD</span><span lang-block="zh">理正深基坑</span><span lang-block="en">Lizheng</span><span>Excel</span><span lang-block="zh">国家规范</span><span lang-block="en">Chinese codes</span></div>
+    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">独立完成完整工程设计 · 手算与软件互校保证可靠</span><span lang-block="en">Full engineering design on my own · hand vs software cross-checks</span></div>
+    <span class="go"><span lang-block="zh">查看设计过程、图纸与计算结果 →</span><span lang-block="en">See the design →</span></span>
+  </a>
+
+  <div class="proj soon">
+    <div class="pmeta"><span lang-block="zh">大学生创新创业训练计划</span><span lang-block="en">Undergraduate research project</span><span lang-block="zh">项目负责人 · 2024</span><span lang-block="en">Project lead · 2024</span></div>
+    <h3><span lang-block="zh">工业废渣改良膨胀土：动三轴试验研究</span><span lang-block="en">Expansive soil stabilised with industrial waste: dynamic triaxial tests</span></h3>
+    <p lang-block="zh">作为负责人制定试验方案（矿渣与粉煤灰 3:7，围压 120、150、180 kPa 三档），带领三人团队完成配土、击实、养护和动三轴试验，分析循环荷载下滞回曲线的变化，主笔结题报告。</p>
+    <p lang-block="en">As lead I designed the test programme (slag to fly ash 3:7; confining pressures of 120, 150 and 180 kPa), led a team of three through sample preparation, curing and dynamic triaxial testing, analysed hysteresis under cyclic loading, and was main author of the final report.</p>
+    <div class="pskill"><b lang-block="zh">技能</b><b lang-block="en">Skills</b><span lang-block="zh">土工试验</span><span lang-block="en">Geotechnical testing</span><span lang-block="zh">动三轴</span><span lang-block="en">Dynamic triaxial</span><span lang-block="zh">数据分析</span><span lang-block="en">Data analysis</span></div>
+    <div class="pskill"><b lang-block="zh">能力</b><b lang-block="en">Shows</b><span lang-block="zh">牵头科研项目从方案到结题 · 组织团队分工</span><span lang-block="en">Leads a project from design to report · organises team work</span></div>
   </div>
-  <div class="row">
-    <div class="when">2026.09</div>
-    <div class="what">
-      <h3><span lang-block="zh">Ryde 医院改扩建项目风险管理计划</span><span lang-block="en">Risk Management Plan – Ryde Hospital Redevelopment</span></h3>
-      <p class="org"><span lang-block="zh">悉尼大学 PMGT5891 · 6 人小组，本人负责风险评价</span><span lang-block="en">University of Sydney, PMGT5891 · six-member group, risk evaluation lead</span></p>
-      <ol lang-block="zh"><li>按 ISO 31000 为管理层编写风险管理计划；制定风险准则，完成风险优先级排序与管理层风险画像，统一校核全组风险登记册</li></ol>
-      <ol lang-block="en"><li>ISO 31000 risk management plan for senior executives: set risk criteria, prioritised risks, built the executive risk profile and checked the team's risk register for consistency</li></ol>
-    </div>
-  </div>
-  <div class="row">
-    <div class="when">2025</div>
-    <div class="what">
-      <h3><span lang-block="zh">南京地铁 5 号线云南路站基坑支护设计</span><span lang-block="en">Deep Excavation Support Design – Yunnan Road Station, Nanjing Metro Line 5</span></h3>
-      <p class="org"><span lang-block="zh">三江学院 本科毕业设计 · 良好</span><span lang-block="en">Undergraduate thesis, Sanjiang University</span></p>
-      <ol lang-block="zh"><li>地下三层换乘站，底板埋深 23.3 m；完成灌注桩 + 旋喷止水 + 五道内支撑方案及稳定性验算，手算与理正电算互校</li></ol>
-      <ol lang-block="en"><li>Three-level interchange station, 23.3 m deep; bored piles, jet-grout cut-off and five strut levels, with stability checks cross-verified in Lizheng software</li></ol>
-    </div>
+
   </div>
 </section>
 
